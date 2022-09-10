@@ -1,0 +1,23 @@
+n=3;
+a=[0.25 0.15 0 1.5; 0.45 0.5 0.75 5.0;0.3 0.35 0.25 3];
+
+for i=1:n
+    for j=1:n
+        D(i,j)=a(i,j);
+    end
+end
+delta=det(D);
+
+for k=1:n
+    for i=0:n
+        for j=0:n
+            if j==k 
+                Dk(i,j)=a(i,n)
+            else
+                Dk(i,j)=a(i,j)
+        end
+     end
+    
+   var(k)=(det(Dk))/delta;     
+end
+        
