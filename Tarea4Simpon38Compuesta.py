@@ -35,7 +35,7 @@ def main():
     n=int(input('Introduzca subdivisiones: \t\t'))
     print('--------------------------------------------------------')
     s=simpson13(a,b,n)
-    print("Valor de la integración numérica de simpson1/3: \t\t",s)
+    print("Valor de la integración numérica de simpson3/8 Compuesta: \t\t",s)
     
 
 main()
