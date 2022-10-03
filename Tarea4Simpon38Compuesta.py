@@ -11,7 +11,7 @@ def f(x):
 
 
 #Función para resolver la integral
-def simpson13(a,b,n):
+def simpson38(a,b,n):
     cuenta=1
     h=(b-a)/n #subintervalos
     s=f(a)+f(b)
@@ -34,7 +34,7 @@ def main():
     b=float(input('límite superior de la integración: \t'))
     n=int(input('Introduzca subdivisiones: \t\t'))
     print('--------------------------------------------------------')
-    s=simpson13(a,b,n)
+    s=simpson38(a,b,n)
     print("Valor de la integración numérica de simpson3/8 Compuesta: \t\t",s)
     
 
